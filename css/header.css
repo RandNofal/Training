@@ -103,7 +103,7 @@ ol {
 
 }
 
-li a {
+.menu a , .search a{
     display: flex;
     align-items: center;
     color: var(--navy-color);
