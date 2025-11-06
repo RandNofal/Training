@@ -2,7 +2,7 @@
     --logo-orange: #e98300;
     --header-bg: #D7D3C7;
     --navy-color: #003150;
-    --header-color-with-opacity: ##F9F8F6;
+    --header-color-with-opacity: #F9F8F6;
 }
 
 * {
@@ -75,6 +75,8 @@ svg {
 
 #arrow_right_alt {
     vertical-align: middle;
+    color: black;
+    margin-left:2px;
 }
 
 .icons {
