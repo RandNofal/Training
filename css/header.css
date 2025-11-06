@@ -144,8 +144,7 @@ ol {
     }
     #menu_mobile{
         display: block;
-         order:1;
-        
+         order:1; 
 
     }
     .logo{
@@ -154,11 +153,15 @@ ol {
     }
     .search{
         order:3;
-        margin-top: -10px;
        
     }
      .search a{
         display: none;
     }
+     #menu_mobile span, .search span{
+        display: inline-block;
+        margin: auto;
+     }
+   
 
 }
