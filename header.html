@@ -68,7 +68,31 @@
                 </ol>
             </div>
             <div class="menu" id="menu_mobile">
-                   <span class="material-icons"> menu</span>
+                <label for="menu_toggle" class="material-icons">menu</label>
+                <input type="checkbox" id="menu_toggle" hidden>
+                <div id="overlay"></div>
+                <div id="list">
+                    <ol>
+                    <li><label for="menu_toggle" class="material-icons" id="close">close</label></li>
+                        <li><a href="#">SOLUTIONS</a> <span class="material-icons">chevron_right</span></li>
+                        <li><a href="#">PRODUCTS </a><span class="material-icons">chevron_right</span></li>
+                        <li><a href="#">RENTALS</a> <span class="material-icons">chevron_right</span></li>
+                        <li><a href="#">INDUSTRIES</a> <span class="material-icons">chevron_right</span></li>
+                        <li><a href="#">EDUCATION & TRAINING</a> <span class="material-icons">chevron_right</span></li>
+                        <li><a href="#">COMPANY INFO</a><span class="material-icons">chevron_right</span></li>
+                    </ol>
+
+                    <div class="icons">
+                        <button class="icon-btn">
+                            <span class="material-icons">person</span> Find a Rep
+                        </button>
+
+                        <button class="icon-btn">
+                            <span class="material-icons">shopping_cart</span> Parts Store
+                        </button>
+
+                    </div>
+                </div>
             </div>
             <div class="search">
                 <a href="#">SEARCH</a>
@@ -76,6 +100,7 @@
             </div>
         </div>
     </header>
+
 </body>
 
 </html>
