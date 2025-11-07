@@ -8,7 +8,6 @@
 * {
     box-sizing: border-box !important;
 }
-
 body,
 header,
 p {
@@ -22,9 +21,9 @@ p {
 }
 
 .announcement p {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+   font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
     padding: 10px;
 }
@@ -33,14 +32,18 @@ strong {
     white-space: nowrap;
 }
 
+
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
     border-bottom: 5px solid #AA272F;
+    padding: 10px 0;
 
 }
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .logo {
     width: 12.5%;
@@ -70,14 +73,14 @@ strong {
     background-color: white;
     border: none;
     color: var(--navy-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
 }
 
 .material-icons {
     color: var(--navy-color);
-    font-size: 30px !important;
+    font-size: 20px !important;
     vertical-align: middle !important;
     margin-left: 15px;
 }
@@ -88,20 +91,24 @@ strong {
     margin-left: 2px;
 }
 
-.icons {
-    display: flex;
-    justify-content: end;
+.top-now { 
     padding-right: 10px;
     background-color: var(--header-color-with-opacity);
-    box-shadow: 1px 1px 5px #F4F5F6;
+    box-shadow: 1px 1px 5px #D3DEE4;
+
+}
+.top-now .container{
+    display: flex;
+    justify-content: end;
 
 }
 
-.icons .icon-btn {
+.top-now .icon-btn {
     background-color: var(--header-color-with-opacity);
-    appearance: none;
-    box-shadow: none;
-    border: none;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    margin:0px 10px;
 }
 
 ol {
@@ -123,8 +130,8 @@ ol {
     text-align: center;
     padding: 14px 16px;
     font-weight: bold;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .search {
@@ -135,148 +142,4 @@ ol {
 .search span {
     margin-top: 10px;
     margin-left: -10px;
-}
-
-#menu_mobile {
-    display: none;
-}
-
-#menu_toggle {
-    display: none;
-}
-
-@media screen and (max-width: 1024px) {
-
-    .icons,
-    .menu:not(#menu_mobile) {
-        display: none;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        flex-direction: row;
-    }
-
-    #menu_mobile {
-        display: block;
-        order: 1;
-
-    }
-
-    .logo {
-        width: 50%;
-        order: 2;
-    }
-
-    .search {
-        order: 3;
-
-    }
-
-    .search a {
-        display: none;
-    }
-
-    #menu_mobile span,
-    .search span {
-        display: inline-block;
-        margin: auto;
-    }
-
-    #list {
-        display: none;
-    }
-    #list ol {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: left;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-
-    }
-
-    #list ol li {
-        display: flex;
-        width: 100%;
-        border-bottom: 1px solid #D7D3C7;
-        border-collapse: collapse;
-        padding: 0px;
-        flex-direction: row;
-        justify-content: left;
-        height: 40px;
-        padding-bottom: 10px !important;
-        padding-top: 0 !important;
-    }
-
-    #list ol li span {
-
-        margin-right: 0;
-    }
-
-    #list .icons {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: left;
-        width: 100%;
-        height: 50%;
-        padding: 0;
-        margin: 0;
-        background-color: var(--header-color-with-opacity);
-        box-shadow: none;
-        padding-left: 10px;
-    }
-
-    #list .icons .icon-btn {
-       background-color: var(--header-color-with-opacity);
-        padding: 10px 0px;
-    }
-
-    #close {
-        display: block;
-        width: 100%;
-        cursor: pointer;
-        font-size: 28px;
-        padding-bottom: 10px;
-        background-color: white;
-    }
-    #close_li{
-    border-bottom: 2px solid #AA272F !important;
-    }
-
-    #overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.3);
-    z-index: 10;
-}
-
-#menu_toggle:checked ~ #overlay {
-    display: block;
-}
-#menu_toggle:checked ~ #list {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 88vw;
-    height: 100vh;
-    z-index: 1000;
-    background-color: white;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0;
-    
-}
-
-
-
 }
