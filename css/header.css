@@ -82,19 +82,19 @@ strong {
     padding: 0;
 }
 
-.top-now { 
+.header-top { 
     padding: 0px 10px;
     background-color: var(--header-color-with-opacity);
     box-shadow: 1px 1px 5px #D3DEE4;
 
 }
-.top-now .container{
+.header-top.container{
     display: flex;
     justify-content: end;
 
 }
 
-.top-now .icon{
+.header-top .icon{
     background-color: var(--header-color-with-opacity);
     text-decoration: none;
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -162,7 +162,7 @@ ul {
 
 @media screen and (max-width: 1024px) {
 
-    .top-now,
+    .header-top,
     .menu:not(#menu_mobile) {
         display: none;
     }
