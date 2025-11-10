@@ -68,16 +68,6 @@ strong {
     fill: var(--navy-color);
     opacity: 0.65;
 }
-
-.icon-btn {
-    background-color: white;
-    border: none;
-    color: var(--navy-color);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 .material-icons {
     color: var(--navy-color);
     font-size: 20px !important;
@@ -89,10 +79,11 @@ strong {
     vertical-align: middle;
     color: black;
     margin-left: 2px;
+    padding: 0;
 }
 
 .top-now { 
-    padding-right: 10px;
+    padding: 0px 10px;
     background-color: var(--header-color-with-opacity);
     box-shadow: 1px 1px 5px #D3DEE4;
 
@@ -103,12 +94,14 @@ strong {
 
 }
 
-.top-now .icon-btn {
+.top-now .icon{
     background-color: var(--header-color-with-opacity);
     text-decoration: none;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     margin:0px 10px;
+    color: var(--navy-color);
+    font-weight: bold;
 }
 
 ol {
@@ -122,9 +115,9 @@ ol {
 }
 
 .menu a,
-.search a {
+.search a ,#menu_mobile a{
     display: flex;
-    align-items: center;
+    justify-content: center;
     color: var(--navy-color);
     text-decoration: none;
     text-align: center;
@@ -136,10 +129,58 @@ ol {
 
 .search {
     display: flex;
-    justify-content: start;
+    align-items: center;  
+    justify-content: center;
+    gap: 5px; 
+}
+
+.search a {
+    display: flex;
+    align-items: center;
+    color: var(--navy-color);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    padding: 10px;
 }
 
 .search span {
-    margin-top: 10px;
-    margin-left: -10px;
+    margin: 0; 
+    font-size: 22px !important;
+}
+
+#menu_mobile {
+    display: none;
+}
+.material-icons {
+    color: var(--navy-color);
+    font-size: 22px !important;
+    vertical-align: middle !important;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .top-now,
+    .menu:not(#menu_mobile) {
+        display: none;
+    }
+    #menu_mobile {
+        display: flex;
+        justify-content: start;
+       
+
+    }
+    .logo {
+        width: 50%;
+    }
+    .search a ,#menu_mobile a{
+        display: none;
+    }
+      #menu_mobile span,
+    .search span {
+        display: inline-block;
+        margin: auto;
+    }
 }
