@@ -5,7 +5,6 @@
     --header-color-with-opacity: #F9F8F6;
     --red-border:#AA272F;
 }
-
 * {
     box-sizing: border-box !important;
 }
@@ -27,11 +26,13 @@ p {
     text-align: center;
     font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
-    padding: 10px;
+    padding: 15px;
+    font-weight: 200;
 }
 
 strong {
     white-space: nowrap;
+    font-weight: 550;
 }
 
 
@@ -49,7 +50,7 @@ strong {
 
 
 .logo {
-    width: 12.5%;
+    width: 15%;
     height: auto;
 }
 
@@ -77,7 +78,8 @@ strong {
     font-size: 20px !important;
     vertical-align: middle !important;
     margin-left: 15px;
-    padding: 10px;
+    padding: 7px;
+    padding-right: 0;
 }
 #arrow_right_alt {
     vertical-align: middle;
@@ -90,6 +92,7 @@ strong {
     padding: 0px 10px;
     background-color: var(--header-color-with-opacity);
     box-shadow: 1px 1px 5px #D3DEE4;
+    padding: 0px;
 
 }
 
@@ -106,7 +109,7 @@ strong {
     font-size: 14px;
     margin: 0px 10px;
     color: var(--navy-color);
-    font-weight: bold;
+    font-weight: 550;
 }
 
 ul {
@@ -143,6 +146,7 @@ ul {
 .search span {
     margin: 0;
     font-size: 22px !important;
+    padding: 0;
 }
 
 
