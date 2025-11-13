@@ -91,7 +91,7 @@ strong {
 .header-top {
     padding: 0px 10px;
     background-color: var(--header-color-with-opacity);
-    box-shadow: 1px 1px 5px #D3DEE4;
+    box-shadow: 0px 0px 8px #D3DEE4;
     padding: 0px;
 
 }
