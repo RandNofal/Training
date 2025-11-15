@@ -342,7 +342,7 @@ li span {
     position: relative;
     top: 100px
 }
-.text h3, .text p{
+.text h3{
     color:gray;
 }
 .text p{
