@@ -33,9 +33,11 @@ p {
     font-weight: 200;
 }
 
-strong {
+.announcement p a {
     white-space: nowrap;
-    font-weight: 550;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -49,12 +51,17 @@ strong {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 
 .logo {
     width: 15%;
     height: auto;
+    display: flex;
+    justify-content: left !important;
+    padding: 0;
 }
 
 .logo svg {
@@ -85,7 +92,8 @@ strong {
     padding-right: 0;
 }
 
-#arrow_right_alt, #arrow_right_alt_navy {
+.arrow_right_alt,
+.arrow_right_alt_navy {
     vertical-align: middle;
     color: black;
     margin-left: 2px;
@@ -96,7 +104,8 @@ strong {
     padding: 0px 10px;
     background-color: var(--header-color-with-opacity);
     box-shadow: 0px 0px 8px #D3DEE4;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -166,216 +175,6 @@ li span {
 #close_li {
     display: none;
 }
-
-.boiler {
-    background-image: url('../images/boiler2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 420px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 20;
-    margin-bottom: 30px;
-}
-
-.boiler .center-text h1 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    z-index: 100;
-    font-weight: bold;
-
-}
-
-.boiler .center-text button {
-    padding: 14px 40px;
-    display: block;
-    margin: auto;
-    background: none;
-    border: 1px solid white;
-    color: white;
-    font-size: 16px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    width: 250px;
-}
-
-.intro .container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-
-}
-
-.intro .container h3 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    padding-top: 20px;
-
-}
-
-.intro .container #description {
-    padding-left: 30px;
-    border-left: 2px solid #D7D3C7;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    padding: 20px 30px;
-    font-size: 18px;
-
-}
-
-.intro-side {
-    position: relative;
-    width: 250px;
-    height: 200px;
-    background: var(--red-border);
-    z-index: 20;
-    top: -60px;
-    right: 20px;
-}
-
-.intro-side p {
-    border: none !important;
-    color: white;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    margin: 20px;
-    padding-left: 10px !important;
-    font-size: 16px;
-}
-
-.intro-side p span {
-    color: white;
-    font-size: 18px;
-    margin-left: 0;
-}
-
-#find-rep,#find-rep span{
-    font-size: 13px;
-    text-decoration: none;
-    color: white;
-}
-
-.video-section {
-    margin: 20px;
-}
-
-.video-section .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.video-text {
-    background-color: var(--header-bg);
-    height: 300px;
-    padding: 20px;
-    position: relative;
-    top: 50px;
-    right: -30px;
-    z-index: 20;
-}
-
-.video-text h4 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 24px;
-
-}
-
-.video-text p {
-    font-size: 16px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.iframe-container {
-    position: relative;
-    height: 400px;
-    background-image: url('../images/video-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.iframe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: transparent;
-}
-
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 30px;
-}
-
-.play-button:hover {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.solutions .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.rentals {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    gap: 30px;
-}
-
-.rentals img ,.custome-solutions img {
-    display: block;
-    height: 450px;
-}
-
-.rentals .text , .custome-solutions .text {
-    position: relative;
-    top: 100px
-}
-.text h3{
-    color:gray;
-}
-.text p{
-    font-size: 20px;
-}
-.rentals strong, .custome-solutions strong {
-    display: block;
-    font-size: 20px;
-    color: black;
-
-}
-.custome-solutions{
-     display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    gap: 30px;
-
-}
-
-
-#learn-more {
-    color: var(--navy-color);
-
-}
-
- #arrow_right_alt_navy {
-    color: var(--navy-color) !important;
-
-}
-
-
-
-
-
 
 @media screen and (max-width: 1024px) {
     .navbar .container {
