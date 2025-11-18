@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 20;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .photo_section .center-text h1 {
@@ -88,7 +88,7 @@
 }
 
 .video-section {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     height: 400px;
 }
 
@@ -154,6 +154,7 @@
 .solutions {
     padding: 0;
     margin: 0;
+    margin-bottom: 50px;
 }
 
 .solutions .container {
@@ -185,6 +186,10 @@
 
 .text h3 {
     color: gray;
+}
+.text h3 span{
+    padding-bottom: 4px;
+    border-bottom: 2px solid gray;
 }
 
 .text p {
@@ -226,7 +231,7 @@
 .recent-news {
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .recent-news h1 {
@@ -290,7 +295,7 @@
     align-items: center;
     z-index: 20;
     opacity: 0.9;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .product h1 {
@@ -309,7 +314,7 @@
 .categories {
     margin: 0;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .categories_element img {
@@ -344,7 +349,7 @@
 .recently_viewed {
     margin: 0;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .recently_viewed .container {
@@ -407,7 +412,7 @@ p b {
 }
 
 .discover_more {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .discover_more h1 {

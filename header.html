@@ -1,366 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cleaver-Brooks ClearFire</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaver-Brooks ClearFire</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-        <header>
-            <div class="announcement">
-                <div class="container">
-                    <p>
-                        Cleaver-Brooks ClearFire&#174;-CE Condensing Boiler Named
-                        Most Valuable Product of the Year by Industry Professionals.
-                        <a href="javascript:void(0)">Learn More<span class="material-icons arrow_right_alt">arrow_right_alt</span></a>
-                    </p>
-                </div>
-            </div>
-            <div class="header-top">
-                <div class="container">
-                    <a href="javascript:void(0)" class="icon">
-                        <span class="material-icons">person</span> Find a Rep
-                    </a>
-                    <a href="javascript:void(0)" class="icon">
-                        <span class="material-icons">shopping_cart</span> Parts Store
-                    </a>
-                </div>
-            </div>
-            <div class="navbar">
-                <div class="container">
-                    <input type="checkbox" id="toggle-menu">
-                    <label for="toggle-menu" class="menu-icon">
-                        <span class="material-icons">menu</span>
-                    </label>
-                    <div id="overlay"></div>
-                    <div class="logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.6 34.7">
-                            <path class="a"
-                                d="M28.8-.1a5.08,5.08,0,0,0-3.6,1.5l-8,8,3.4,3.4h0a5.07,5.07,0,0,1,0,7.2h0l-4,4,8.5,8.5a5.09,5.09,0,0,0,7.2-7.2l-8.4-8.4,8.4-8.4a5.07,5.07,0,0,0,0-7.2A5,5,0,0,0,28.8-.1"
-                                transform="translate(0 0.7)" />
-                            <path class="x"
-                                d="M5.1-.7A5.1,5.1,0,0,0,1.5,8l8.4,8.4L1.5,24.8A5.09,5.09,0,1,0,8.7,32l8-8-3.4-3.4h0a5.07,5.07,0,0,1,0-7.2h0l4-4L8.8.9A5.17,5.17,0,0,0,5.1-.7"
-                                transform="translate(0 0.7)" />
-                            <path class="x1"
-                                d="M16.7,24h0l-3.4-3.4h0a5.07,5.07,0,0,1,0-7.2h0l4-4,3.4,3.4h0a5.07,5.07,0,0,1,0,7.2h0l-4,4"
-                                transform="translate(0 0.7)" />
-                            <path class="a"
-                                d="M68.2.5a.86.86,0,0,1,.3.6V32.5a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H60.7a2.35,2.35,0,0,1-.8-.2c-.3-.1-.4-.3-.6-.5L48.9,13.3V32.5a.8.8,0,0,1-.9.9H41.5a.8.8,0,0,1-.9-.9V1.1a.8.8,0,0,1,.9-.9h6.7a2.35,2.35,0,0,1,.8.2c.3.1.4.3.6.5L60.1,20.3V1.1a.6.6,0,0,1,.3-.6A.86.86,0,0,1,61,.2h6.6A.86.86,0,0,1,68.2.5Z"
-                                transform="translate(0 0.7)" />
-                            <path class="a"
-                                d="M103.5,15.5a.86.86,0,0,1,.3.6V27.8a5.45,5.45,0,0,1-.5,2.2,5.52,5.52,0,0,1-3,3,5.38,5.38,0,0,1-2.2.4H81.4a5.38,5.38,0,0,1-2.2-.4,5.52,5.52,0,0,1-3-3,5.38,5.38,0,0,1-.4-2.2V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3A5.45,5.45,0,0,1,81.4,0H101a.6.6,0,0,1,.6.3.86.86,0,0,1,.3.6V7.2a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H85.1a.85.85,0,0,0-.6.2.86.86,0,0,0-.3.6V24.3a.6.6,0,0,0,.3.6,1.42,1.42,0,0,0,.6.2h9.4a.85.85,0,0,0,.6-.2.73.73,0,0,0,.2-.6V16a.6.6,0,0,1,.3-.6.86.86,0,0,1,.6-.3h6.6A5.74,5.74,0,0,0,103.5,15.5Z"
-                                transform="translate(0 0.7)" />
-                            <path class="a"
-                                d="M133.2.2a5.45,5.45,0,0,1,2.2.5,5.52,5.52,0,0,1,3,3,5.45,5.45,0,0,1,.5,2.2V32.6a.6.6,0,0,1-.3.6c-.2.1-.4.3-.6.3h-6.6a.6.6,0,0,1-.6-.3c-.1-.2-.3-.4-.3-.6V24.1a.85.85,0,0,0-.2-.6.86.86,0,0,0-.6-.3h-9.4a.6.6,0,0,0-.6.3.86.86,0,0,0-.3.6v8.5a.8.8,0,0,1-.9.9H112a.8.8,0,0,1-.9-.9V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3,5.45,5.45,0,0,1,2.2-.5h16.5ZM130.4,16V7.7H119.3V16Z"
-                                transform="translate(0 0.7)" />
-                            <path class="a"
-                                d="M173.8,15.5a.86.86,0,0,1,.3.6V27.8a5.45,5.45,0,0,1-.5,2.2,5.52,5.52,0,0,1-3,3,5.38,5.38,0,0,1-2.2.4H151.6a5.38,5.38,0,0,1-2.2-.4,5.52,5.52,0,0,1-3-3,5.38,5.38,0,0,1-.4-2.2V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3,5.45,5.45,0,0,1,2.2-.5h19.6a.6.6,0,0,1,.6.3c.1.2.3.4.3.6V7.2a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H155.3a.85.85,0,0,0-.6.2.86.86,0,0,0-.3.6V24.3a.6.6,0,0,0,.3.6.73.73,0,0,0,.6.2h9.4a.85.85,0,0,0,.6-.2.73.73,0,0,0,.2-.6V16a.6.6,0,0,1,.3-.6.86.86,0,0,1,.6-.3H173Z"
-                                transform="translate(0 0.7)" />
-                            <path class="a"
-                                d="M206.3.5a.86.86,0,0,1,.3.6v6a.6.6,0,0,1-.3.6,1.42,1.42,0,0,1-.6.2h-16c-.2,0-.2.1-.2.2v5.2a.22.22,0,0,0,.2.2h13.6a.6.6,0,0,1,.6.3,1.42,1.42,0,0,1,.2.6v4.7a.85.85,0,0,1-.2.6.86.86,0,0,1-.6.3H189.7c-.2,0-.2.1-.2.2v2.3h0v2.8c0,.2.1.2.2.2h15.9a.6.6,0,0,1,.6.3c.1.2.3.4.3.6v6a.6.6,0,0,1-.3.6c-.2.1-.4.3-.6.3H182.1a.8.8,0,0,1-.9-.9V1.1a.6.6,0,0,1,.3-.6c.2-.1.4-.3.6-.3h23.6A.71.71,0,0,1,206.3.5Z"
-                                transform="translate(0 0.7)" />
-                        </svg>
-                    </div>
-                    <nav class="menu">
-                        <ul>
-                            <li id="close_li"><label for="toggle-menu" class="material-icons" id="close">close</label></li>
-                            <li><a href="javascript:void(0)">SOLUTIONS</a><span class="material-icons">chevron_right</span>
-                            </li>
-                            <li><a href="javascript:void(0)">PRODUCTS</a><span class="material-icons">chevron_right</span>
-                            </li>
-                            <li><a href="javascript:void(0)">RENTALS</a><span class="material-icons">chevron_right</span>
-                            </li>
-                            <li><a href="javascript:void(0)">INDUSTRIES</a><span class="material-icons">chevron_right</span>
-                            </li>
-                            <li><a href="javascript:void(0)">EDUCATION & TRAINING</a><span
-                                    class="material-icons">chevron_right</span></li>
-                            <li><a href="javascript:void(0)">COMPANY INFO</a><span
-                                    class="material-icons">chevron_right</span></li>
-                        </ul>
-                    </nav>
-
-                    <div class="search">
-                        <a href="javascript:void(0)">SEARCH</a>
-                        <span class="material-icons">search</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="photo_section">
-            <div class="center-text">
-                <h1>Comprehensive<br>
-                    Boiler Room Solutions <br></h1>
-                <button> LEARN MORE</button>
-            </div>
-        </section>
-        <section class="intro">
+<body>
+    <header>
+        <div class="announcement">
             <div class="container">
-                <h3>Who We Are</h3>
-                <p id="description">Founded in 1929, Cleaver-Brooks is a complete boiler-room solutions provider that helps
-                    businesses run better every day. It develops hot water and steam generation products
-                    aimed at integrating and optimizing the total boiler/ burner/control, and stack exhaust system
-                    to maximize energy efficiency and reliability while minimizing emissions.
+                <p>
+                    Cleaver-Brooks ClearFire&#174;-CE Condensing Boiler Named
+                    Most Valuable Product of the Year by Industry Professionals.
+                    <a href="javascript:void(0)">Learn More<span
+                            class="material-icons arrow_right_alt">arrow_right_alt</span></a>
                 </p>
-                <div class="intro-side">
+            </div>
+        </div>
+        <div class="header-top">
+            <div class="container">
+                <a href="javascript:void(0)" class="icon">
+                    <span class="material-icons">person</span> Find a Rep
+                </a>
+                <a href="javascript:void(0)" class="icon">
+                    <span class="material-icons">shopping_cart</span> Parts Store
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <input type="checkbox" id="toggle-menu">
+                <label for="toggle-menu" class="menu-icon">
+                    <span class="material-icons">menu</span>
+                </label>
+                <div id="overlay"></div>
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.6 34.7">
+                        <path class="a"
+                            d="M28.8-.1a5.08,5.08,0,0,0-3.6,1.5l-8,8,3.4,3.4h0a5.07,5.07,0,0,1,0,7.2h0l-4,4,8.5,8.5a5.09,5.09,0,0,0,7.2-7.2l-8.4-8.4,8.4-8.4a5.07,5.07,0,0,0,0-7.2A5,5,0,0,0,28.8-.1"
+                            transform="translate(0 0.7)" />
+                        <path class="x"
+                            d="M5.1-.7A5.1,5.1,0,0,0,1.5,8l8.4,8.4L1.5,24.8A5.09,5.09,0,1,0,8.7,32l8-8-3.4-3.4h0a5.07,5.07,0,0,1,0-7.2h0l4-4L8.8.9A5.17,5.17,0,0,0,5.1-.7"
+                            transform="translate(0 0.7)" />
+                        <path class="x1"
+                            d="M16.7,24h0l-3.4-3.4h0a5.07,5.07,0,0,1,0-7.2h0l4-4,3.4,3.4h0a5.07,5.07,0,0,1,0,7.2h0l-4,4"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M68.2.5a.86.86,0,0,1,.3.6V32.5a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H60.7a2.35,2.35,0,0,1-.8-.2c-.3-.1-.4-.3-.6-.5L48.9,13.3V32.5a.8.8,0,0,1-.9.9H41.5a.8.8,0,0,1-.9-.9V1.1a.8.8,0,0,1,.9-.9h6.7a2.35,2.35,0,0,1,.8.2c.3.1.4.3.6.5L60.1,20.3V1.1a.6.6,0,0,1,.3-.6A.86.86,0,0,1,61,.2h6.6A.86.86,0,0,1,68.2.5Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M103.5,15.5a.86.86,0,0,1,.3.6V27.8a5.45,5.45,0,0,1-.5,2.2,5.52,5.52,0,0,1-3,3,5.38,5.38,0,0,1-2.2.4H81.4a5.38,5.38,0,0,1-2.2-.4,5.52,5.52,0,0,1-3-3,5.38,5.38,0,0,1-.4-2.2V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3A5.45,5.45,0,0,1,81.4,0H101a.6.6,0,0,1,.6.3.86.86,0,0,1,.3.6V7.2a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H85.1a.85.85,0,0,0-.6.2.86.86,0,0,0-.3.6V24.3a.6.6,0,0,0,.3.6,1.42,1.42,0,0,0,.6.2h9.4a.85.85,0,0,0,.6-.2.73.73,0,0,0,.2-.6V16a.6.6,0,0,1,.3-.6.86.86,0,0,1,.6-.3h6.6A5.74,5.74,0,0,0,103.5,15.5Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M133.2.2a5.45,5.45,0,0,1,2.2.5,5.52,5.52,0,0,1,3,3,5.45,5.45,0,0,1,.5,2.2V32.6a.6.6,0,0,1-.3.6c-.2.1-.4.3-.6.3h-6.6a.6.6,0,0,1-.6-.3c-.1-.2-.3-.4-.3-.6V24.1a.85.85,0,0,0-.2-.6.86.86,0,0,0-.6-.3h-9.4a.6.6,0,0,0-.6.3.86.86,0,0,0-.3.6v8.5a.8.8,0,0,1-.9.9H112a.8.8,0,0,1-.9-.9V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3,5.45,5.45,0,0,1,2.2-.5h16.5ZM130.4,16V7.7H119.3V16Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M173.8,15.5a.86.86,0,0,1,.3.6V27.8a5.45,5.45,0,0,1-.5,2.2,5.52,5.52,0,0,1-3,3,5.38,5.38,0,0,1-2.2.4H151.6a5.38,5.38,0,0,1-2.2-.4,5.52,5.52,0,0,1-3-3,5.38,5.38,0,0,1-.4-2.2V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3,5.45,5.45,0,0,1,2.2-.5h19.6a.6.6,0,0,1,.6.3c.1.2.3.4.3.6V7.2a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H155.3a.85.85,0,0,0-.6.2.86.86,0,0,0-.3.6V24.3a.6.6,0,0,0,.3.6.73.73,0,0,0,.6.2h9.4a.85.85,0,0,0,.6-.2.73.73,0,0,0,.2-.6V16a.6.6,0,0,1,.3-.6.86.86,0,0,1,.6-.3H173Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M206.3.5a.86.86,0,0,1,.3.6v6a.6.6,0,0,1-.3.6,1.42,1.42,0,0,1-.6.2h-16c-.2,0-.2.1-.2.2v5.2a.22.22,0,0,0,.2.2h13.6a.6.6,0,0,1,.6.3,1.42,1.42,0,0,1,.2.6v4.7a.85.85,0,0,1-.2.6.86.86,0,0,1-.6.3H189.7c-.2,0-.2.1-.2.2v2.3h0v2.8c0,.2.1.2.2.2h15.9a.6.6,0,0,1,.6.3c.1.2.3.4.3.6v6a.6.6,0,0,1-.3.6c-.2.1-.4.3-.6.3H182.1a.8.8,0,0,1-.9-.9V1.1a.6.6,0,0,1,.3-.6c.2-.1.4-.3.6-.3h23.6A.71.71,0,0,1,206.3.5Z"
+                            transform="translate(0 0.7)" />
+                    </svg>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li id="close_li"><label for="toggle-menu" class="material-icons" id="close">close</label></li>
+                        <li><a href="javascript:void(0)">SOLUTIONS</a><span class="material-icons">chevron_right</span>
+                        </li>
+                        <li><a href="javascript:void(0)">PRODUCTS</a><span class="material-icons">chevron_right</span>
+                        </li>
+                        <li><a href="javascript:void(0)">RENTALS</a><span class="material-icons">chevron_right</span>
+                        </li>
+                        <li><a href="javascript:void(0)">INDUSTRIES</a><span class="material-icons">chevron_right</span>
+                        </li>
+                        <li><a href="javascript:void(0)">EDUCATION & TRAINING</a><span
+                                class="material-icons">chevron_right</span></li>
+                        <li><a href="javascript:void(0)">COMPANY INFO</a><span
+                                class="material-icons">chevron_right</span></li>
+                    </ul>
+                </nav>
+
+                <div class="search">
+                    <a href="javascript:void(0)">SEARCH</a>
+                    <span class="material-icons">search</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="photo_section">
+        <div class="center-text">
+            <h1>Comprehensive<br>
+                Boiler Room Solutions <br></h1>
+            <button> LEARN MORE</button>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="container">
+            <h3>Who We Are</h3>
+            <p id="description">Founded in 1929, Cleaver-Brooks is a complete boiler-room solutions provider that helps
+                businesses run better every day. It develops hot water and steam generation products
+                aimed at integrating and optimizing the total boiler/ burner/control, and stack exhaust system
+                to maximize energy efficiency and reliability while minimizing emissions.
+            </p>
+            <div class="intro-side">
+                <p>
+                    Our dedicated reps help
+                    you commission your
+                    system, obtain parts
+                    and service, and provider
+                    product training.
+                </p>
+                <a id="find-rep" href="javascript:void(0)"><span class="material-icons">search</span> Find a Rep Near
+                    You</a>
+            </div>
+        </div>
+    </section>
+    <section class="video-section">
+        <div class="container">
+            <div class="video-text">
+                <h4>Boiler Room Intelligence at Your Fingertips</h4>
+                <p>
+                    Ideal for any industry, Prometha offers users the ability to remotely
+                    monitor boiler systems from anywhere, providing alerts and actionable
+                    insights that help increase reliability, efficiency, safety and
+                    sustainability in the boiler room.
+                </p>
+            </div>
+            <div class="iframe-container">
+                <iframe id="videoFrame" src="about:blank" allow="autoplay"></iframe>
+                <div class="play-button" id="playBtn">&#9658;</div>
+            </div>
+        </div>
+    </section>
+    <section class="solutions">
+        <div class="container">
+            <h1>Solutions</h1>
+            <div class="rentals">
+                <div class="text">
+                    <h3><span>REN</span>TALS</h3>
                     <p>
-                        Our dedicated reps help
-                        you commission your
-                        system, obtain parts
-                        and service, and provider
-                        product training.
+                        <strong>We Provide . Nationwide.</strong>
+                        More than 1,500 CBRA representative worldwide provide
+                        comprehensive, ongoing support-from commissioning your system,
+                        to providing parts and service aftar the sale, to product training.
+                        <br><br>
+                        <a href="javascript:void(0)" class="learn-more">Learn More
+                            <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
                     </p>
-                    <a id="find-rep" href="javascript:void(0)"><span class="material-icons">search</span> Find a Rep Near
-                        You</a>
                 </div>
+                <img src="images/img1.png" alt="Watertube boilers">
             </div>
-        </section>
-        <section class="video-section">
-            <div class="container">
-                <div class="video-text">
-                    <h4>Boiler Room Intelligence at Your Fingertips</h4>
+            <div class="custome-solutions">
+                <img src="images/img2.jpg" alt="Watertube boilers">
+                <div class="text">
+                    <h3><span>CUS</span>TOME SOLUTIONS</h3>
                     <p>
-                        Ideal for any industry, Prometha offers users the ability to remotely
-                        monitor boiler systems from anywhere, providing alerts and actionable
-                        insights that help increase reliability, efficiency, safety and
-                        sustainability in the boiler room.
+                        <strong>Lower Emissions.</strong>
+                        Cleaver-Brooks works with customers to custom tailor solutions that
+                        help them be more environmentally friendly, decrease fual costs,
+                        increase efficiency, and meet ever stringent guidelines.
+                        <br><br>
+                        <a href="javascript:void(0)" class="learn-more">Learn More
+                            <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
                     </p>
                 </div>
-                <div class="iframe-container">
-                    <iframe id="videoFrame" src="about:blank" allow="autoplay"></iframe>
-                    <div class="play-button" id="playBtn">&#9658;</div>
-                </div>
-            </div>
-        </section>
-        <section class="solutions">
-            <div class="container">
-                <h1>Solutions</h1>
-                <div class="rentals">
-                    <div class="text">
-                        <h3>RENTALS</h3>
-                        <p>
-                            <strong>We Provide . Nationwide.</strong>
-                            More than 1,500 CBRA representative worldwide provide
-                            comprehensive, ongoing support-from commissioning your system,
-                            to providing parts and service aftar the sale, to product training.
-                            <br><br>
-                            <a href="javascript:void(0)" class="learn-more">Learn More
-                                <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
-                        </p>
-                    </div>
-                    <img src="images/img1.png" alt="Watertube boilers">
-                </div>
-                <div class="custome-solutions">
-                    <img src="images/img2.jpg" alt="Watertube boilers">
-                    <div class="text">
-                        <h3>CUSTOME SOLUTIONS</h3>
-                        <p>
-                            <strong>Lower Emissions.</strong>
-                            Cleaver-Brooks works with customers to custom tailor solutions that
-                            help them be more environmentally friendly, decrease fual costs,
-                            increase efficiency, and meet ever stringent guidelines.
-                            <br><br>
-                            <a href="javascript:void(0)" class="learn-more">Learn More
-                                <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
-                        </p>
-                    </div>
 
-                </div>
             </div>
-        </section>
-        <section class="recent-news">
-            <div class="container">
-                <h1>Recent News</h1>
-                <a href="javascript:void(0)" class="all_news">View All News
-                    <span class="material-icons arrow_right_alt">arrow_right_alt</span></a>
-                <div class="internal-container">
-                    <button class="show-more-button" id="show-more1">
-                        <span class="material-icons">arrow_back</span></button>
-                    <button class="show-more-button" id="show-more2">
-                        <span class="material-icons">arrow_forward</span></button>
-                    <div class="recent-news-card">
-                        <img src="images/recent_img1.jpg" alt="boiler monitoring measures">
-                        <div class="text">
-                            <h4>Desperate Times Call for Innovative IoT Boiler Monitoring Measures</h4>
-                            <p>As we navigate these unchartered waters together, smart
-                                technology can help keep critical systems operatiionals to
-                                ensure that compaines stay up and running. Functions... </p>
-                            <br>
-                            <a href="javascript:void(0)" class="read-more">Read More
-                                <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
-                        </div>
-                    </div>
-                    <div class="recent-news-card">
-                        <img src="images/recent_img2.jpg" alt="COVID-19 Update">
-                        <div class="text">
-                            <h4>Our Commitment Customers During COVID-19 Pandemic</h4>
-                            <p>With the rest of the world, Cleaver-Brooks is monitoring the
-                                COVID-19 (CoronaVirus) situation very closely.as the safety
-                                of our employees and their families remain our top priority... </p>
-                            <br>
-                            <a href="javascript:void(0)" class="read-more">Read More
-                                <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
-                        </div>
-                    </div>
-                    <div class="recent-news-card">
-                        <img src="images/recent_img3.jpg" alt="Most Valuable Product of the Year">
-                        <div class="text">
-                            <h4>Cleaver-Brooks ClearFire&#174;-CE Condensing Boiler - Most
-                                Valuable Product of the Year
-                            </h4>
-                            <p>The Cleaver-Brooks ClearFire&#174;-CE (CFC-E) fully condensing
-                                hydronic boiler is the Most Valuable Product of 2019
-                                according to Consulting-Specifying Engineer.The... </p>
-                            <br>
-                            <a href="javascript:void(0)" class="read-more">Read More
-                                <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="product">
-            <h1>Product</h1>
-        </section>
-        <section class="categories">
-            <div class="container">
-                <h1>Featured Categories </h1>
-                <div class="elements">
-
-                    <div class="categories_element">
-                        <img src="images/element1.jpg" alt="boiler">
-                        <a href="javascript:void(0)" class="element_name">Boiler &#8594;
-                        </a>
-                    </div>
-                    <div class="categories_element">
-                        <img src="images/element2.jpg" alt="burner">
-                        <a href="javascript:void(0)" class="element_name">Burners &#8594;
-                        </a>
-                    </div>
-                    <div class="categories_element">
-                        <img src="images/element3.jpg" alt="control">
-                        <a href="javascript:void(0)" class="element_name">Controls &#8594;
-                        </a>
-                    </div>
-                    <div class="categories_element">
-                        <img src="images/element4.jpg" alt="heat recovery">
-                        <a href="javascript:void(0)" class="element_name">Heat Recovery &#8594;
-                        </a>
-                    </div>
-                    <div class="categories_element">
-                        <img src="images/element5.jpg" alt="water systems">
-                        <a href="javascript:void(0)" class="element_name">Water Systems &#8594;
-                        </a>
-                    </div>
-                    <div class="categories_element">
-                        <img src="images/element6.jpg" alt="exhaust">
-                        <a href="javascript:void(0)" class="element_name">Exhaust Solutions &#8594;
-                        </a>
-                    </div>
-                    <div class="categories_element">
-                        <img src="images/element7.jpg" alt="parts & service">
-                        <a href="javascript:void(0)" class="element_name">Parts & Service &#8594;
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="recently_viewed">
-            <div class="container">
-                <button class="show-more-button" id="show-more3">
+        </div>
+    </section>
+    <section class="recent-news">
+        <div class="container">
+            <h1>Recent News</h1>
+            <a href="javascript:void(0)" class="all_news">View All News
+                <span class="material-icons arrow_right_alt">arrow_right_alt</span></a>
+            <div class="internal-container">
+                <button class="show-more-button" id="show-more1">
                     <span class="material-icons">arrow_back</span></button>
-                <button class="show-more-button" id="show-more4">
+                <button class="show-more-button" id="show-more2">
                     <span class="material-icons">arrow_forward</span></button>
-                <h1>Recently Viewed Products</h1>
-                <div class="products_container">
-                    <div class="product_card">
-                        <p class="product_description">Near-Perfect Combustion</p>
-                        <img src="images/element1.jpg" alt="CBEX Dryback Elite">
-                        <b class="name">CBEX Dryback Elite</b>
-                        <p><b>CB Part #:</b>4268902</p>
-                        <button>VIEW DETAILS</button>
+                <div class="recent-news-card">
+                    <img src="images/recent_img1.jpg" alt="boiler monitoring measures">
+                    <div class="text">
+                        <h4>Desperate Times Call for Innovative IoT Boiler Monitoring Measures</h4>
+                        <p>As we navigate these unchartered waters together, smart
+                            technology can help keep critical systems operatiionals to
+                            ensure that compaines stay up and running. Functions... </p>
+                        <br>
+                        <a href="javascript:void(0)" class="read-more">Read More
+                            <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
                     </div>
-                    <div class="product_card">
-                        <p class="product_description">Large Capacity</p>
-                        <img src="images/viewed2.jpg" alt="CBEX Elite (1,300-2,200 HP)">
-                        <b class="name">CBEX Dryback Elite</b>
-                        <p><b>CB Part #:</b>42613431</p>
-                        <button>VIEW DETAILS</button>
+                </div>
+                <div class="recent-news-card">
+                    <img src="images/recent_img2.jpg" alt="COVID-19 Update">
+                    <div class="text">
+                        <h4>Our Commitment Customers During COVID-19 Pandemic</h4>
+                        <p>With the rest of the world, Cleaver-Brooks is monitoring the
+                            COVID-19 (CoronaVirus) situation very closely.as the safety
+                            of our employees and their families remain our top priority... </p>
+                        <br>
+                        <a href="javascript:void(0)" class="read-more">Read More
+                            <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
                     </div>
-                    <div class="product_card">
-                        <p class="product_description">Fully Condensing</p>
-                        <img src="images/viewed3.jpg" alt="CBEX Dryback Elite">
-                        <b class="name">ClearFire&#174;-CE</b>
-                        <p><b>CB Part #:</b>12343692</p>
-                        <button>VIEW DETAILS</button>
-                    </div>
-                    <div class="product_card">
-                        <p class="product_description">Near-Perfect Combustion</p>
-                        <img src="images/viewed4.jpg" alt="CBEX Dryback Elite">
-                        <b class="name">ClearFire&#174;-LC</b>
-                        <p><b>CB Part #:</b>4268902</p>
-                        <button>VIEW DETAILS</button>
+                </div>
+                <div class="recent-news-card">
+                    <img src="images/recent_img3.jpg" alt="Most Valuable Product of the Year">
+                    <div class="text">
+                        <h4>Cleaver-Brooks ClearFire&#174;-CE Condensing Boiler - Most
+                            Valuable Product of the Year
+                        </h4>
+                        <p>The Cleaver-Brooks ClearFire&#174;-CE (CFC-E) fully condensing
+                            hydronic boiler is the Most Valuable Product of 2019
+                            according to Consulting-Specifying Engineer.The... </p>
+                        <br>
+                        <a href="javascript:void(0)" class="read-more">Read More
+                            <span class="material-icons arrow_right_alt_navy">arrow_right_alt</span></a>
                     </div>
 
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="product">
+        <h1>Product</h1>
+    </section>
+    <section class="categories">
+        <div class="container">
+            <h1>Featured Categories </h1>
+            <div class="elements">
 
-        </section>
-        <section class="discover_more">
-            <div class="container">
-                <h1>Discover More</h1>
-                <div class="discover_more_container">
-                    <div class="discover_more_element">
-                        <img src="images/discover_more1.png" alt="">
-                        <div class="text purple">
-                            <h5>PRODUCT INDEX</h5>
-                            <h2>Have Something in Mind?</h2>
-                            <p>Larem ipsum dolor sit amet
-                                consectetur adipiscing elit enam
-                                nonummy lorem ipsum dolor sit amet
-                                consectetur adipiscing elit enam.
-                            </p>
-                            <br> <br>
-                            <a href="javascript:void(0)">Learn More &#8594;</a>
-                        </div>
+                <div class="categories_element">
+                    <img src="images/element1.jpg" alt="boiler">
+                    <a href="javascript:void(0)" class="element_name">Boiler &#8594;
+                    </a>
+                </div>
+                <div class="categories_element">
+                    <img src="images/element2.jpg" alt="burner">
+                    <a href="javascript:void(0)" class="element_name">Burners &#8594;
+                    </a>
+                </div>
+                <div class="categories_element">
+                    <img src="images/element3.jpg" alt="control">
+                    <a href="javascript:void(0)" class="element_name">Controls &#8594;
+                    </a>
+                </div>
+                <div class="categories_element">
+                    <img src="images/element4.jpg" alt="heat recovery">
+                    <a href="javascript:void(0)" class="element_name">Heat Recovery &#8594;
+                    </a>
+                </div>
+                <div class="categories_element">
+                    <img src="images/element5.jpg" alt="water systems">
+                    <a href="javascript:void(0)" class="element_name">Water Systems &#8594;
+                    </a>
+                </div>
+                <div class="categories_element">
+                    <img src="images/element6.jpg" alt="exhaust">
+                    <a href="javascript:void(0)" class="element_name">Exhaust Solutions &#8594;
+                    </a>
+                </div>
+                <div class="categories_element">
+                    <img src="images/element7.jpg" alt="parts & service">
+                    <a href="javascript:void(0)" class="element_name">Parts & Service &#8594;
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recently_viewed">
+        <div class="container">
+            <button class="show-more-button" id="show-more3">
+                <span class="material-icons">arrow_back</span></button>
+            <button class="show-more-button" id="show-more4">
+                <span class="material-icons">arrow_forward</span></button>
+            <h1>Recently Viewed Products</h1>
+            <div class="products_container">
+                <div class="product_card">
+                    <p class="product_description">Near-Perfect Combustion</p>
+                    <img src="images/element1.jpg" alt="CBEX Dryback Elite">
+                    <b class="name">CBEX Dryback Elite</b>
+                    <p><b>CB Part #:</b>4268902</p>
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="product_card">
+                    <p class="product_description">Large Capacity</p>
+                    <img src="images/viewed2.jpg" alt="CBEX Elite (1,300-2,200 HP)">
+                    <b class="name">CBEX Dryback Elite</b>
+                    <p><b>CB Part #:</b>42613431</p>
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="product_card">
+                    <p class="product_description">Fully Condensing</p>
+                    <img src="images/viewed3.jpg" alt="CBEX Dryback Elite">
+                    <b class="name">ClearFire&#174;-CE</b>
+                    <p><b>CB Part #:</b>12343692</p>
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="product_card">
+                    <p class="product_description">Near-Perfect Combustion</p>
+                    <img src="images/viewed4.jpg" alt="CBEX Dryback Elite">
+                    <b class="name">ClearFire&#174;-LC</b>
+                    <p><b>CB Part #:</b>4268902</p>
+                    <button>VIEW DETAILS</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="discover_more">
+        <div class="container">
+            <h1>Discover More</h1>
+            <div class="discover_more_container">
+                <div class="discover_more_element">
+                    <img src="images/discover_more1.png" alt="">
+                    <div class="text purple">
+                        <h5>PRODUCT INDEX</h5>
+                        <h2>Have Something in Mind?</h2>
+                        <p>Larem ipsum dolor sit amet
+                            consectetur adipiscing elit enam
+                            nonummy lorem ipsum dolor sit amet
+                            consectetur adipiscing elit enam.
+                        </p>
+                        <br> <br>
+                        <a href="javascript:void(0)">Learn More &#8594;</a>
                     </div>
-                    <div class="discover_more_element">
-                        <img src="images/discover_more2.png" alt="">
-                        <div class="text teal">
-                            <h5>FIND A REP</h5>
-                            <h2>Over 1,500 Reps Worldwide</h2>
-                            <p>The Cleaver-Brooks Representative
-                                Association (CBRA) is the first and
-                                only dedicated sales and service rep
-                                network in the industry.
-                            </p>
-                            <br> <br>
-                            <a href="javascript:void(0)">Learn More &#8594;</a>
-                        </div>
+                </div>
+                <div class="discover_more_element">
+                    <img src="images/discover_more2.png" alt="">
+                    <div class="text teal">
+                        <h5>FIND A REP</h5>
+                        <h2>Over 1,500 Reps Worldwide</h2>
+                        <p>The Cleaver-Brooks Representative
+                            Association (CBRA) is the first and
+                            only dedicated sales and service rep
+                            network in the industry.
+                        </p>
+                        <br> <br>
+                        <a href="javascript:void(0)">Learn More &#8594;</a>
                     </div>
                 </div>
             </div>
+        </div>
 
-        </section>
-        <script>
-            const toggle = document.getElementById('toggle-menu');
-            const headerTop = document.querySelector('.header-top');
-            toggle.addEventListener('change', () => {
-                headerTop.style.display = toggle.checked ? 'flex' : 'none';
-            });
-            const playBtn = document.getElementById('playBtn');
-            const iframe = document.getElementById('videoFrame');
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-section1">
+                <div class="footer_coulmn">    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.6 34.7">
+                        <path class="a"
+                            d="M28.8-.1a5.08,5.08,0,0,0-3.6,1.5l-8,8,3.4,3.4h0a5.07,5.07,0,0,1,0,7.2h0l-4,4,8.5,8.5a5.09,5.09,0,0,0,7.2-7.2l-8.4-8.4,8.4-8.4a5.07,5.07,0,0,0,0-7.2A5,5,0,0,0,28.8-.1"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M5.1-.7A5.1,5.1,0,0,0,1.5,8l8.4,8.4L1.5,24.8A5.09,5.09,0,1,0,8.7,32l8-8-3.4-3.4h0a5.07,5.07,0,0,1,0-7.2h0l4-4L8.8.9A5.17,5.17,0,0,0,5.1-.7"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M16.7,24h0l-3.4-3.4h0a5.07,5.07,0,0,1,0-7.2h0l4-4,3.4,3.4h0a5.07,5.07,0,0,1,0,7.2h0l-4,4"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M68.2.5a.86.86,0,0,1,.3.6V32.5a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H60.7a2.35,2.35,0,0,1-.8-.2c-.3-.1-.4-.3-.6-.5L48.9,13.3V32.5a.8.8,0,0,1-.9.9H41.5a.8.8,0,0,1-.9-.9V1.1a.8.8,0,0,1,.9-.9h6.7a2.35,2.35,0,0,1,.8.2c.3.1.4.3.6.5L60.1,20.3V1.1a.6.6,0,0,1,.3-.6A.86.86,0,0,1,61,.2h6.6A.86.86,0,0,1,68.2.5Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M103.5,15.5a.86.86,0,0,1,.3.6V27.8a5.45,5.45,0,0,1-.5,2.2,5.52,5.52,0,0,1-3,3,5.38,5.38,0,0,1-2.2.4H81.4a5.38,5.38,0,0,1-2.2-.4,5.52,5.52,0,0,1-3-3,5.38,5.38,0,0,1-.4-2.2V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3A5.45,5.45,0,0,1,81.4,0H101a.6.6,0,0,1,.6.3.86.86,0,0,1,.3.6V7.2a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H85.1a.85.85,0,0,0-.6.2.86.86,0,0,0-.3.6V24.3a.6.6,0,0,0,.3.6,1.42,1.42,0,0,0,.6.2h9.4a.85.85,0,0,0,.6-.2.73.73,0,0,0,.2-.6V16a.6.6,0,0,1,.3-.6.86.86,0,0,1,.6-.3h6.6A5.74,5.74,0,0,0,103.5,15.5Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M133.2.2a5.45,5.45,0,0,1,2.2.5,5.52,5.52,0,0,1,3,3,5.45,5.45,0,0,1,.5,2.2V32.6a.6.6,0,0,1-.3.6c-.2.1-.4.3-.6.3h-6.6a.6.6,0,0,1-.6-.3c-.1-.2-.3-.4-.3-.6V24.1a.85.85,0,0,0-.2-.6.86.86,0,0,0-.6-.3h-9.4a.6.6,0,0,0-.6.3.86.86,0,0,0-.3.6v8.5a.8.8,0,0,1-.9.9H112a.8.8,0,0,1-.9-.9V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3,5.45,5.45,0,0,1,2.2-.5h16.5ZM130.4,16V7.7H119.3V16Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M173.8,15.5a.86.86,0,0,1,.3.6V27.8a5.45,5.45,0,0,1-.5,2.2,5.52,5.52,0,0,1-3,3,5.38,5.38,0,0,1-2.2.4H151.6a5.38,5.38,0,0,1-2.2-.4,5.52,5.52,0,0,1-3-3,5.38,5.38,0,0,1-.4-2.2V5.7a5.38,5.38,0,0,1,.4-2.2,5.52,5.52,0,0,1,3-3,5.45,5.45,0,0,1,2.2-.5h19.6a.6.6,0,0,1,.6.3c.1.2.3.4.3.6V7.2a.6.6,0,0,1-.3.6.86.86,0,0,1-.6.3H155.3a.85.85,0,0,0-.6.2.86.86,0,0,0-.3.6V24.3a.6.6,0,0,0,.3.6.73.73,0,0,0,.6.2h9.4a.85.85,0,0,0,.6-.2.73.73,0,0,0,.2-.6V16a.6.6,0,0,1,.3-.6.86.86,0,0,1,.6-.3H173Z"
+                            transform="translate(0 0.7)" />
+                        <path class="a"
+                            d="M206.3.5a.86.86,0,0,1,.3.6v6a.6.6,0,0,1-.3.6,1.42,1.42,0,0,1-.6.2h-16c-.2,0-.2.1-.2.2v5.2a.22.22,0,0,0,.2.2h13.6a.6.6,0,0,1,.6.3,1.42,1.42,0,0,1,.2.6v4.7a.85.85,0,0,1-.2.6.86.86,0,0,1-.6.3H189.7c-.2,0-.2.1-.2.2v2.3h0v2.8c0,.2.1.2.2.2h15.9a.6.6,0,0,1,.6.3c.1.2.3.4.3.6v6a.6.6,0,0,1-.3.6c-.2.1-.4.3-.6.3H182.1a.8.8,0,0,1-.9-.9V1.1a.6.6,0,0,1,.3-.6c.2-.1.4-.3.6-.3h23.6A.71.71,0,0,1,206.3.5Z"
+                            transform="translate(0 0.7)" />
+                    </svg>
+                    <p>221 Law St Thomasville,<br>
+                        Georgia 31792
+                    </p> 
+                    <a href="javascript:void(0)">Find a Rep &#8594;</a>
+                    <a href="javascript:void(0)">Subscribe for Updates &#8594;</a>
+                </div>
+                <div class="footer_coulmn">
+                    <h4><span>Com</span>pany info</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Community Outreach</li>
+                        <li>Careers</li>
+                        <li>Trade Shows</li>
+                        <li>News</li>
+                    </ul>
 
-            playBtn.addEventListener('click', () => {
-                iframe.src = "https://www.youtube.com/embed/uumjI46xV84?autoplay=1&controls=0&rel=0";
-                playBtn.style.display = "none";
-            });
-        </script>
-    </body>
+                </div>
+                <div class="footer_coulmn">
+                    <h4><span>Solu</span>tions</h4>
+                    <ul>
+                        <li>Boiler Exhaust</li>
+                        <li>Heat Recovery</li>
+                        <li>lorem Ipsum</li>
+                        <li>Reduce Emissions</li>
+                        <li>Reduce Fuel Costs</li>
+                        <li>Rentals</li>
+                    </ul>
+
+                </div>
+                <div class="footer_coulmn">
+                    <h4><span>Feat</span>ured Products</h4>
+                    <ul>
+                        <li>ClearFire-CE</li>
+                        <li>Flextube</li>
+                        <li>Hawk 4000</li>
+                        <li>ProFire SBR-30</li>
+                        <li>ProFire XL</li>
+                        <li>Prometha</li>
+                    </ul>
+
+                </div>
+                <div class="footer_coulmn">
+                    <h4><span>Cont</span>act With Us</h4>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>Location & Hours</li>
+                        <li>Events</li>
+                    </ul>    
+                    <div class="social-media">
+                        <a href="javascript:void(0)" class="fa fa-facebook"></a>
+                        <a href="javascript:void(0)" class="fa fa-twitter"></a>
+                        <a href="javascript:void(0)" class="fa fa-linkedin"></a>
+                        <a href="javascript:void(0)" class="fa fa-instagram"></a>
+                        <a href="javascript:void(0)" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section2">
+                <p>
+                   &#174; 2020 All Rights Reserved
+                </p>
+                <p>
+                  Terms and Conditions | Privacy Policy
+                </p>
+
+            </div>    
+
+        </div>
+    </footer>
+    <script>
+        const toggle = document.getElementById('toggle-menu');
+        const headerTop = document.querySelector('.header-top');
+        toggle.addEventListener('change', () => {
+            headerTop.style.display = toggle.checked ? 'flex' : 'none';
+        });
+        const playBtn = document.getElementById('playBtn');
+        const iframe = document.getElementById('videoFrame');
+
+        playBtn.addEventListener('click', () => {
+            iframe.src = "https://www.youtube.com/embed/uumjI46xV84?autoplay=1&controls=0&rel=0";
+            playBtn.style.display = "none";
+        });
+    </script>
+</body>
 
 </html>
