@@ -285,10 +285,10 @@ li span {
 
     .header-top {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 335px;
         width: 88%;
-        z-index: 20;
+        z-index: 200;
         border: none;
         box-shadow: none;
         height: calc(100vh - 335px);
