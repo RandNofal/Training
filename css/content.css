@@ -743,24 +743,22 @@ b.name {
     }
 
     .discover_more_element p {
-        font-size: 12px;
+        font-size: 10px;
 
     }
 
     .discover_more_element h2 {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .discover_more_element {
-        height: 370px;
+        height: 400px;
         margin-bottom: 30px;
     }
 
     section {
         margin-bottom: 30px !important;
     }
-
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
