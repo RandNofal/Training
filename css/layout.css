@@ -1,24 +1,23 @@
-
 .container {
     box-sizing: border-box;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width:100%;
+    margin-inline: auto;
+    padding-inline: 16px;
 }
 
-
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .container {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+
+
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) {
     .container {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+
     }
 }
