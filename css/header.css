@@ -53,23 +53,23 @@ p {
     align-items: center;
     justify-content: space-between !important;
     margin: 0 !important;
+    gap:20px;
 }
 
 
 .logo {
     width: 180px !important;
     height: auto;
-    display: flex;
-    justify-content: left !important;
+    /* display: flex;
+    justify-content: left !important; */
     padding: 0 !important;
     margin: 0 !important;
 }
 
 .logo svg {
-    max-width: 100 !important;
+    width: 100%!important;
     display: block;
     padding: 0 !important;
-    margin: auto !important;
 }
 
 .x {
@@ -133,7 +133,7 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap:20px;
     align-items: center;
     justify-content: space-between;
 
