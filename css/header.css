@@ -57,7 +57,7 @@ p {
 
 
 .logo {
-    width: 15%;
+    width: 180px !important;
     height: auto;
     display: flex;
     justify-content: left !important;
@@ -66,9 +66,9 @@ p {
 }
 
 .logo svg {
-    max-width: 100%;
+    max-width: 100 !important;
     display: block;
-   padding: 0 !important;
+    padding: 0 !important;
     margin: auto !important;
 }
 
@@ -148,8 +148,9 @@ ul {
     text-align: center;
     padding: 14px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 0.0227rem + 1.1364vw, 0.875rem);
     font-family: "Helvetica Neue", Arial, sans-serif;
+    white-space: nowrap;
 }
 
 
@@ -179,7 +180,8 @@ li span {
 #close_li {
     display: none;
 }
-#overlay{
+
+#overlay {
     display: none;
 }
 
@@ -240,6 +242,7 @@ li span {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
     }
 
     .menu a {

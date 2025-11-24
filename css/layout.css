@@ -1,7 +1,8 @@
 .container {
     box-sizing: border-box;
-    max-width:100%;
-    margin-inline: auto;
+    max-width:1350px;
+    width:100%;
+    margin-inline: 0 auto;
     padding-inline: 16px;
 }
 
@@ -9,15 +10,22 @@
     .container {
         padding-left: 24px !important;
         padding-right: 24px !important;
-
-
     }
 }
 
 @media (min-width:1024px) {
     .container {
-        padding-left: 50px !important;
-        padding-right: 50px !important;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
 
     }
+
+}
+@media (min-width:1200px) {
+    .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+
+    }
+    
 }
