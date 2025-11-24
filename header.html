@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleaver-Brooks</title>
+    <title>Rand Training</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -17,17 +17,17 @@
                 <p>
                     Cleaver-Brooks ClearFire&#174;-CE Condensing Boiler Named
                     Most Valuable Product of the Year by Industry Professionals.
-                    <a href="javascript:void(0)">Learn More<span
-                            class="material-icons arrow_right_alt">arrow_right_alt</span></a>
+                    <a href="javascript:void(0)">Learn More
+                        <span class="material-icons arrow_right_alt">arrow_right_alt</span></a>
                 </p>
             </div>
         </div>
-        <div class="header-top">
+        <div class="secondary_nav">
             <div class="container">
-                <a href="javascript:void(0)" class="icon">
+                <a href="javascript:void(0)" class="icon_text">
                     <span class="material-icons">person</span> Find a Rep
                 </a>
-                <a href="javascript:void(0)" class="icon">
+                <a href="javascript:void(0)" class="icon_text">
                     <span class="material-icons">shopping_cart</span> Parts Store
                 </a>
             </div>
@@ -70,24 +70,35 @@
                 <nav class="menu">
                     <ul>
                         <li id="close_li"><label for="toggle-menu" class="material-icons" id="close">close</label></li>
-                        <li><a href="javascript:void(0)">SOLUTIONS</a><span class="material-icons">chevron_right</span>
+                        <li><a href="javascript:void(0)">SOLUTIONS</a><span
+                                class="material-icons mobile-only">chevron_right</span>
                         </li>
-                        <li><a href="javascript:void(0)">PRODUCTS</a><span class="material-icons">chevron_right</span>
+                        <li><a href="javascript:void(0)">PRODUCTS</a><span
+                                class="material-icons mobile-only">chevron_right</span>
                         </li>
-                        <li><a href="javascript:void(0)">RENTALS</a><span class="material-icons">chevron_right</span>
+                        <li><a href="javascript:void(0)">RENTALS</a><span
+                                class="material-icons mobile-only">chevron_right</span>
                         </li>
-                        <li><a href="javascript:void(0)">INDUSTRIES</a><span class="material-icons">chevron_right</span>
+                        <li><a href="javascript:void(0)">INDUSTRIES</a><span
+                                class="material-icons mobile-only">chevron_right</span>
                         </li>
                         <li><a href="javascript:void(0)">EDUCATION & TRAINING</a><span
-                                class="material-icons">chevron_right</span></li>
+                                class="material-icons mobile-only">chevron_right</span></li>
                         <li><a href="javascript:void(0)">COMPANY INFO</a><span
-                                class="material-icons">chevron_right</span></li>
+                                class="material-icons mobile-only">chevron_right</span></li>
+                        <li class="mobile-only"><a href="javascript:void(0)" class="icon_text">
+                                <span class="material-icons">person</span> Find a Rep
+                            </a>
+                        </li>
+                        <li class="mobile-only"><a href="javascript:void(0)" class="icon_text">
+                                <span class="material-icons">shopping_cart</span> Parts Store
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-
                 <div class="search">
                     <a href="javascript:void(0)">SEARCH</a>
-                    <span class="material-icons">search</span>
+                    <span class="material-icons search-icon">search</span>
                 </div>
             </div>
         </div>
@@ -429,11 +440,11 @@
                         <li>Events</li>
                     </ul>
                     <div class="social-media">
-                        <a href="javascript:void(0)" class="fa fa-facebook"></a>
-                        <a href="javascript:void(0)" class="fa fa-twitter"></a>
-                        <a href="javascript:void(0)" class="fa fa-linkedin"></a>
-                        <a href="javascript:void(0)" class="fa fa-instagram"></a>
-                        <a href="javascript:void(0)" class="fa fa-youtube"></a>
+                        <a href="javascript:void(0)" class="fab fa-facebook"></a>
+                        <a href="javascript:void(0)" class="fab fa-twitter"></a>
+                        <a href="javascript:void(0)" class="fab fa-linkedin"></a>
+                        <a href="javascript:void(0)" class="fab fa-instagram"></a>
+                        <a href="javascript:void(0)" class="fab fa-youtube"></a>
                     </div>
                 </div>
             </div>
@@ -450,11 +461,6 @@
         </div>
     </footer>
     <script>
-        const toggle = document.getElementById('toggle-menu');
-        const headerTop = document.querySelector('.header-top');
-        toggle.addEventListener('change', () => {
-            headerTop.style.display = toggle.checked ? 'flex' : 'none';
-        });
         const playBtn = document.getElementById('playBtn');
         const iframe = document.getElementById('videoFrame');
 
@@ -462,7 +468,7 @@
             iframe.src = "https://www.youtube.com/embed/uumjI46xV84?autoplay=1&controls=0&rel=0";
             playBtn.style.display = "none";
         });
-        
+
     </script>
 
 

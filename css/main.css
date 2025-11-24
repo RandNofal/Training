@@ -1,6 +1,6 @@
+@import"variables.css";
 @import "layout.css";
-@import "header.css";
+@import "header/header.css";
+@import "header/header-mobile&tablet.css";
 @import "content.css";
 @import "footer.css";
-
-
