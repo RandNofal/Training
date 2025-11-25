@@ -31,13 +31,13 @@
         text-align: center;
     }
     .intro-side {
-        position: absolute;
         width: 90%;
         padding: 15px;
         text-align: center;
-        margin: 10px auto 0 auto;
-        top:50px;
+        margin: 20px auto 0 auto;
         height: auto !important;
+        top: 0;
+        z-index: 1;
     }
     .intro-side p {
         font-size: 14px;
