@@ -8,7 +8,7 @@
     }
     .logo {
         width: 50%;
-        margin: auto !important;
+        margin: auto;
     }
     .menu-icon {
         display: inline-block;
@@ -29,14 +29,13 @@
         width: 86vw;
         flex-direction: column;
         justify-content: start;
-        background: linear-gradient(to bottom, white 0% 52.5%, var(--header-color-with-opacity) 52.5% 100%);
+        background: linear-gradient(to bottom, white 0vh 350px, var(--header-color-with-opacity) 350px 100vh);
         z-index: 400;
         padding: 0px;
         margin: 0px;
         gap: 0px;
         height: 100vh;
     }
-
     li {
         width: 100%;
         border-bottom: 1px solid #D7D3C7;
@@ -46,19 +45,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 50px;
     }
     .menu a {
         display: block;
         width: 100%;
         margin: 0;
         padding: 16px 16px;
-        text-align: left !important;
+        text-align: left;
         white-space: nowrap;
     }
     #toggle-menu:checked~.menu ul {
         display: flex;
     }
-    #toggle-menu:checked~.menu ul li span {
+    #toggle-menu:checked~.menu ul li span{
         display: inline-block !important;
         color: var(--navy-color);
         padding-right: 10px;
@@ -85,11 +85,7 @@
         z-index: 10;
     }
     #toggle-menu:checked~#overlay {
-        display: block !important;
-    }
-    .icon_text span {
-        display: inline-block;
-        margin: auto;
+        display: block;
     }
     .menu ul li.mobile-only{
         display: block !important;

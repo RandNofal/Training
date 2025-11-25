@@ -3,4 +3,5 @@
 @import "header/header.css";
 @import "header/header-mobile&tablet.css";
 @import "content.css";
+@import "content_mobile&tablet.css";
 @import "footer.css";
