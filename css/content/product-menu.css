@@ -7,8 +7,6 @@
     height: 350px;
     width: 100vw;
     z-index: 2000;
-    /* position: fixed;
-    top: 166px; */
     background-color: white;
 }
 .product-menu-column {
@@ -17,7 +15,7 @@
     padding: 20px;
     margin: 0;  
 }
-.product-menu-column ol {
+.product-menu-column ul {
     list-style-type: none;
     padding: 0;
     margin: 0;

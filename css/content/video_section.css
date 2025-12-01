@@ -1,0 +1,131 @@
+.video-section {
+    margin-bottom: 50px;
+    height: 400px;
+}
+.video-section > div:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.video-text {
+    background-color: var(--header-bg);
+    height: 300px;
+    padding: 10px 30px;
+    position: relative;
+    top: 50px;
+    right: -30px;
+    z-index: 20;
+}
+.video-text h5{
+    color:var(--navy-color);
+    font-size: 18px;
+}
+.video-text h4 {
+   font-size: clamp(1.375rem, 0.6477rem + 1.1364vw, 1.5rem);
+    padding: 0;
+    margin: 20px 0px;
+}
+.video-text p {
+    font-size: 14px;
+    padding-top: 0;
+}
+.video-box {
+    position: relative;
+    height: 400px;
+    background-image: url('../../images/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.video-box video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+.play-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+@media (max-width: 768px) {
+    .video-section {
+        height: auto;
+    }
+    .video-section > div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .video-text {
+        position: static;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        margin: auto;
+    }
+    .video-text h5{
+        margin: 10px;
+    }
+    .video-text h4 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .video-text p {
+        font-size: 14px;
+    }
+    .video-box {
+        height: 300px;
+        width: 100%;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .play-button {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .video-section {
+        height: 300px;
+    }
+    .video-section > div:first-of-type {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 15px;
+    }
+    .video-text {
+        top: 0;
+        right: -10px;
+        height: 280px;
+        padding: 10px;
+    }
+    .video-text h4 {
+        font-size: 22px;
+    }
+     .video-text h5{
+        margin: 15px;
+     }
+    .video-box {
+        height: 280px;
+    }
+    .play-button {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+}
