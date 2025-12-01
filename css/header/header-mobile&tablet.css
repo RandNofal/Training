@@ -58,8 +58,8 @@
     #toggle-menu:checked~.menu ul {
         display: flex;
     }
-    #toggle-menu:checked~.menu ul li span{
-        display: inline-block !important;
+    #toggle-menu:checked~.menu ul li span :not(#pro){
+        display: block !important;
         color: var(--navy-color);
         padding-right: 10px;
         font-size: 18px;

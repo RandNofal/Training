@@ -1,6 +1,8 @@
 footer {
     background-color: var(--navy-color);
-    height: 500px;
+     margin-top: auto;
+    color: white;
+    padding: 20px;
 }
 .footer-section1 {
     display: flex;
@@ -10,48 +12,47 @@ footer {
     gap: 60px;
     border-bottom: 1px solid white;
 }
-.footer_coulmn {
-    width:20%;
+.footer_column {
+    width: 20%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer_coulmn svg {
+.footer_column svg {
     display: block;
     width: 70%;
     margin: 20px 0;
 }
-.footer_coulmn svg .a {
+.footer_column svg .a {
     fill:white;
     opacity: 1;
 }
-.footer_coulmn p {
+.footer_column p {
     color: white;
     font-size: 12px;
     margin-bottom: 30px;
 }
-.footer_coulmn a {
-    display: block;
+.footer_column a {
     text-decoration: none;
     color:white;
     font-size: 14px;
     margin-bottom: 30px;
 }
-.footer_coulmn h4 {
+.footer_column h4 {
     color: white;
     margin-top: 20px;
 }
-.footer_coulmn h4 span {
-    padding-bottom:8px ;
+.footer_column h4 span {
+    padding-bottom: 8px ;
     border-bottom: 2px solid white;
 }
-.footer_coulmn ul {
+.footer_column ul {
     list-style-type: none;
     display: block;
     margin-bottom: 0;
     padding:0;
 }
-.footer_coulmn ul li {
+.footer_column ul li {
     display: block;
     color:white;
     margin: auto;
@@ -61,17 +62,19 @@ footer {
 .social-media {
     display: flex;
     width: 80%;
-    justify-content: space-between;
+    gap: 10px;
 }
 .fab {
-  padding: 4px 2px;
+  padding: 4px 4px;
   font-size: 18px !important;
-  width: 24px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   text-align: center;
   text-decoration: none;
   background: white;
   color: var(--navy-color) !important;
+  text-align: center;
+  vertical-align: middle;
 }
 .footer-section2 {
     margin: 20px 0px;
@@ -83,4 +86,8 @@ footer {
     color: white;
     font-size: 12px;
     word-spacing: 2px;
+}
+.footer-links a{
+    display: block;
+    font-weight: bold;
 }

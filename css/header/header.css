@@ -50,7 +50,7 @@ svg .a {
 }
 .material-icons {
     color: var(--navy-color);
-    font-size: 20px !important;
+    font-size: 20px;
     vertical-align: middle;
     margin-left: 15px;
     padding: 7px;
@@ -111,27 +111,18 @@ header .secondary_nav {
 }
 .navbar .search span.search-icon {
     margin: 0;
-    font-size: 22px !important;
+    font-size: 22px;
     padding: 0;
 }
 #toggle-menu,
-.menu-icon {
-    display: none;
-}
-.mobile-only {
-    display: none !important;
-}
-#close_li {
-    display: none;
-}
-#overlay {
+.menu-icon,#close_li,#overlay {
     display: none;
 }
 @media screen and (max-width: 1200px) {
-     .navbar .logo{
+     .navbar .logo {
         width: 150px;
     }
-    .navbar .logo svg{
+    .navbar .logo svg {
         width: 150px;
     }
     .search a {
