@@ -28,12 +28,18 @@
     position: relative;
     top: 70px;
 }
-.text h3 {
+.text h3.underline {
     color: gray;
+    position: relative;
 }
-.text h3 span {
-    padding-bottom: 4px;
-    border-bottom: 2px solid gray;
+.text h3.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 7%;       
+  height: 2px;
+  background-color: gray;
 }
 .text p {
    font-size: clamp(1rem, -0.4545rem + 2.2727vw, 1.25rem);
