@@ -61,9 +61,20 @@
 .product-menu.active {
   display: flex;
 }
-#pro.active {
-    border-bottom: 2px solid var(--navy-color);
-    padding-bottom: 7px;
+#pro{
+     position: relative;
+}
+#pro::after {
+  content: '';
+  position: absolute;
+  bottom: 0;         
+  left: 10px;           
+  width: 0;          
+  height: 2px;       
+  background-color: var(--navy-color);
+}
+#pro.active::after {
+  width: 30%;        
 }
 @media screen and (max-width: 1024px) {
         #pro.active {

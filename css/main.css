@@ -3,7 +3,7 @@
 @import "layout.css";
 @import "icons.css";
 @import "header/header.css";
-@import "header/header-mobile&tablet.css";
+@import "header/header_mobile_tablet.css";
 @import "content/product-menu.css";
 @import "content/photo_section.css";
 @import "content/intro.css";
@@ -15,4 +15,4 @@
 @import "content/recently_viewed.css";
 @import "content/discover_more_section.css";
 @import "footer/footer.css";
-@import "footer/footer_mobile&tablet.css";
+@import "footer/footer_mobile_tablet.css";

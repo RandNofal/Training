@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rand Nofal Training</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
 </head>
 
 <body>
@@ -75,11 +75,10 @@
                         <li><a href="/">SOLUTIONS</a><span
                                 class="material-icons mobile-only icon-24">chevron_right</span>
                         </li>
-                        <li><a href="javascript:void(0)"><span id="pro">PRO</span>DUCTS</a><span
+                        <li><a href="javascript:void(0)" id="pro">PRODUCTS</a><span
                                 class="material-icons mobile-only icon-24">chevron_right</span>
                         </li>
-                        <li><a href="/">RENTALS</a><span
-                                class="material-icons mobile-only icon-30">chevron_right</span>
+                        <li><a href="/">RENTALS</a><span class="material-icons mobile-only icon-30">chevron_right</span>
                         </li>
                         <li><a href="/">INDUSTRIES</a><span
                                 class="material-icons mobile-only icon-30">chevron_right</span>
@@ -155,7 +154,7 @@
                     <h1>Looking for more information?</h1>
                     <div class="img_box">
                         <img src="images/element1.jpg" alt="boiler">
-                    </div>    
+                    </div>
                     <a href="/">Find a Rep Near You &#8594;</a>
                 </div>
             </div>
@@ -170,7 +169,8 @@
         <section class="intro">
             <div class="container">
                 <h3>Who We Are</h3>
-                <p id="description">Founded in 1929, Cleaver-Brooks is a complete boiler-room solutions provider that helps
+                <p id="description">Founded in 1929, Cleaver-Brooks is a complete boiler-room solutions provider that
+                    helps
                     businesses run better every day. It develops hot water and steam generation products
                     aimed at integrating and optimizing the total boiler/ burner/control and stack exhaust system
                     to maximize energy efficiency and reliability while minimizing emissions.
@@ -202,10 +202,14 @@
                     </p>
                 </div>
                 <div class="video-box">
-                    <video id="videoFrame" src="about:blank" allow="autoplay"></video>
+                    <video id="videoFrame" poster="images/video-bg.jpg">
+                        <source src="videos/Boiler_Room_Solutions.mp4" type="video/mp4">
+                    </video>
                     <div class="play-button" id="playBtn">&#9658;</div>
                 </div>
             </div>
+        </section>
+
         </section>
         <section class="solutions">
             <div class="container">
@@ -448,7 +452,7 @@
                 </div>
             </div>
         </section>
-    </main>    
+    </main>
     <footer>
         <div class="container">
             <div class="footer-section1">
@@ -488,7 +492,7 @@
                     </div>
                 </div>
                 <div class="footer_column">
-                    <h4><span>Com</span>pany info</h4>
+                    <h4>Company info</h4>
                     <h5 class="mobile-only">Company info<span class="material-icons">keyboard_arrow_down</span></h5>
                     <ul>
                         <li>About</li>
@@ -499,7 +503,7 @@
                     </ul>
                 </div>
                 <div class="footer_column">
-                    <h4><span>Solu</span>tions</h4>
+                    <h4>Solutions</h4>
                     <h5 class="mobile-only">Solutions<span class="material-icons">keyboard_arrow_down</span></h5>
                     <ul>
                         <li>Boiler Exhaust</li>
@@ -511,7 +515,7 @@
                     </ul>
                 </div>
                 <div class="footer_column">
-                    <h4><span>Feat</span>ured Products</h4>
+                    <h4>Featured Products</h4>
                     <h5 class="mobile-only">Featured Products<span class="material-icons">keyboard_arrow_down</span>
                     </h5>
                     <ul>
@@ -524,7 +528,7 @@
                     </ul>
                 </div>
                 <div class="footer_column">
-                    <h4><span>Cont</span>act With Us</h4>
+                    <h4>Contact With Us</h4>
                     <h5 class="mobile-only" id="contact_us"> Contact With Us <span
                             class="material-icons">keyboard_arrow_down</span></h5>
                     <ul>
@@ -554,10 +558,12 @@
     </footer>
     <script>
         const playBtn = document.getElementById('playBtn');
-        const iframe = document.getElementById('videoFrame');
+        const video = document.getElementById('videoFrame');
+
         playBtn.addEventListener('click', () => {
-            iframe.src = "https://www.youtube.com/embed/uumjI46xV84?autoplay=1&controls=0&rel=0";
-            playBtn.style.display = "none";
+            video.play();
+            video.controls = true;
+            playBtn.style.display = 'none';
         });
 
         document.querySelectorAll('.mobile-only').forEach((header) => {
@@ -570,16 +576,14 @@
                 }
             });
         });
-        document.addEventListener('DOMContentLoaded', function () {
-            const productItem = document.querySelectorAll('.menu li')[2];
+            const pro = document.querySelector('#pro');
             const productMenu = document.querySelector('.product-menu');
-            const proSpan = document.querySelector('#pro');
 
-            productItem.addEventListener('click', function () {
+            pro.addEventListener('click', function () {
                 productMenu.classList.toggle('active');
-                proSpan.classList.toggle('active');
+                pro.classList.toggle('active'); 
             });
-        });
+
     </script>
 </body>
 

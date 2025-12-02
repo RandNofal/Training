@@ -41,10 +41,16 @@ footer {
 .footer_column h4 {
     color: white;
     margin-top: 20px;
+    position: relative;
 }
-.footer_column h4 span {
-    padding-bottom: 8px ;
-    border-bottom: 2px solid white;
+.footer_column h4::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 15%;       
+  height: 2px;
+  background-color: white;
 }
 .footer_column ul {
     list-style-type: none;

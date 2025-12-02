@@ -31,9 +31,6 @@
 .video-box {
     position: relative;
     height: 400px;
-    background-image: url('../../images/video-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
 }
 .video-box video {
@@ -41,6 +38,7 @@
     height: 100%;
     border: none;
     background: transparent;
+    object-fit: cover;
 }
 .play-button {
     position: absolute;
