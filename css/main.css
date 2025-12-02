@@ -1,6 +1,7 @@
 @import "variables.css";
 @import "global.css";
 @import "layout.css";
+@import "icons.css";
 @import "header/header.css";
 @import "header/header-mobile&tablet.css";
 @import "content/product-menu.css";

@@ -1,0 +1,32 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-48 {
+    width: 48px;
+    height: 48px;
+    padding: 10px !important;  
+}
+.icon-30 {
+    width: 30px;
+    height: 30px;   
+}
+.icon-31x38 {
+    width: 31px;
+    height: 38px;   
+}
+.arrow_right_alt,
+.arrow_right_alt_navy {
+    height: 24px;
+    width: 24px;
+}
+.fab {
+  width: 28px;
+  height: 28px;
+}
