@@ -1,0 +1,29 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .video-section {
+        height: 300px;
+    }
+    .video-section > div:first-of-type {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 15px;
+    }
+    .video-text {
+        top: 0;
+        right: -10px;
+        height: 280px;
+        padding: 10px;
+    }
+    .video-text h4 {
+        font-size: 22px;
+    }
+     .video-text h5{
+        margin: 15px;
+     }
+    .video-box {
+        height: 280px;
+    }
+    .play-button {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,26 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .intro > div:first-of-type {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+        padding: 20px;
+        align-items: center; 
+        justify-items: center;
+        position: relative;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .intro > div:first-of-type #description {
+        font-size: 15px;
+        height: 200px;
+        margin: 0 10px;
+        position: static;
+    }
+    .intro-side {
+        height: auto;
+    }
+    .intro > div:first-of-type h3 {
+        position: relative; 
+        margin-top: 0;  
+    }
+}

@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    .solutions h2 {
+        height: 30px;
+    }
+    .solutions .rentals,
+    .solutions .custome-solutions {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 10px;
+        height: 500px;
+        position: relative;
+    }
+    .solutions .img_box{
+        width: 320px;
+        height: 240px;
+        margin: auto;
+    }
+    .solutions img {
+        max-width: 100%;
+        height: 100%;
+    }
+    .solutions .text {
+        width: 90%;
+        position: static;
+        margin: 0 auto;
+    }
+    .custome-solutions .img_box{
+        order: 2;
+    }
+     .custome-solutions .text{
+        order: 1;
+     }
+    .text p {
+        font-size: 16px;
+    }
+    .text h3 {
+        font-size: 18px;
+    }
+    .learn-more,
+    .read-more {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,23 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .products_box {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .products_box .img_box {
+        height: 210px;
+        width: 210px;
+        margin: 40px auto;
+    }
+    .product_card img {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    .product_card {
+        width: 100%;
+    }
+    .show-more-button{
+        display: none;
+    }
+}    

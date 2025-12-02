@@ -1,0 +1,28 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .discover_more_box {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 15px;
+    }
+    .discover_more_element {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1.8fr;
+    }
+    .discover_more_element .text{
+        padding: 10px;
+    }
+    .discover_more_element p {
+        font-size: 12px;
+    }
+    .discover_more_element h2 {
+        font-size: 16px;
+    }
+      .discover_more_element h5 {
+        margin: 10px;
+    }
+    .show-more-button {
+        display: none;
+    }
+}

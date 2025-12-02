@@ -1,0 +1,14 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .photo_section {
+        height: 320px;
+        background-position: center;
+        margin-bottom: 20px;
+    }
+    .photo_section .center-text h1 {
+        font-size: 38px;
+    }
+    .photo_section .center-text button {
+        width: 200px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 768px) {  
+    .discover_more_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .discover_more_element p {
+        font-size: 10px;
+    }
+    .discover_more_element h2 {
+        font-size: 12px;
+        text-align: left;
+    }
+    .discover_more_element {
+        height: 400px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    section {
+        margin-bottom: 30px !important;
+    }
+}

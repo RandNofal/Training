@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .product {
+        height: 200px;
+        padding: 20px;
+    }
+    .product h2 {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+}
