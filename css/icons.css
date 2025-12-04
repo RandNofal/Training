@@ -30,3 +30,18 @@
   width: 28px;
   height: 28px;
 }
+.material-icons {
+    color: var(--navy-color);
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+    padding: 7px;
+    padding-right: 0;
+}
+.arrow_right_alt,
+.arrow_right_alt_navy {
+    vertical-align: middle;
+    color: black;
+    margin-left: 2px;
+    padding: 0;
+}

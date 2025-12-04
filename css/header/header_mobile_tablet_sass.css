@@ -1,0 +1,101 @@
+@media screen and (max-width: 1024px) {
+  .navbar div:first-of-type {
+    justify-content: space-between;
+    position: relative;
+  }
+  .navbar div:first-of-type .logo {
+    width: 50%;
+    margin: auto;
+  }
+  .navbar div:first-of-type .menu-icon {
+    display: inline-block;
+  }
+  .navbar div:first-of-type .search a {
+    display: none;
+  }
+  .navbar div:first-of-type .search span,
+  .navbar div:first-of-type .menu-icon span {
+    display: inline-block;
+    margin: auto;
+  }
+  .navbar div:first-of-type .menu ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 86vw;
+    flex-direction: column;
+    justify-content: start;
+    background: linear-gradient(to bottom, white 0vh 350px, var(--header-color-with-opacity) 350px 100vh);
+    z-index: 200;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    height: 100vh;
+  }
+  .navbar div:first-of-type .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #D7D3C7;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  .navbar div:first-of-type .menu ul li.mobile-only {
+    display: block !important;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    background-color: var(--header-color-with-opacity);
+    height: 40px;
+  }
+  .navbar div:first-of-type .menu ul li a {
+    padding: 0 16px;
+  }
+  .navbar div:first-of-type .menu a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 16px 16px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .navbar div:first-of-type #toggle-menu:checked ~ .menu ul {
+    display: flex;
+  }
+  .navbar div:first-of-type #toggle-menu:checked ~ .menu ul li span :not(#pro) {
+    display: block !important;
+    color: var(--navy-color);
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .navbar div:first-of-type #toggle-menu:checked ~ .menu ul #close_li {
+    display: block;
+    border-bottom: 3px solid var(--red-border);
+  }
+  .navbar div:first-of-type #toggle-menu:checked ~ .menu ul #close_li #close {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    margin: 0;
+  }
+  .navbar div:first-of-type #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .navbar div:first-of-type #toggle-menu:checked ~ #overlay {
+    display: block;
+  }
+  .secondary_nav {
+    display: none;
+  }
+}/*# sourceMappingURL=header_mobile_tablet_sass.css.map */

@@ -64,6 +64,7 @@
    .footer-section2 {
     flex-direction: column;
     gap: 15px;
+    padding: 10px;
    }
    .footer-section2 #p1 {
         order: 2;

@@ -2,8 +2,8 @@
 @import "global.css";
 @import "layout.css";
 @import "icons.css";
-@import "header/header.css";
-@import "header/header_mobile_tablet.css";
+@import "header/header_sass.css";
+@import "header/header_mobile_tablet_sass.css";
 @import "content/product-menu.css";
 @import "content/photo_section.css";
 @import "content/photo_section_mobile.css";
@@ -32,5 +32,5 @@
 @import "content/discover_more_section.css";
 @import "content/discover_more_section_mobile.css";
 @import "content/discover_more_section_tablet.css";
-@import "footer/footer.css";
-@import "footer/footer_mobile_tablet.css";
+@import "footer/footer_sass.css";
+@import "footer/footer_mobile_tablet_sass.css";
